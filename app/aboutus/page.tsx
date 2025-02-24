@@ -1,80 +1,82 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
+import React from "react";
 import companyData from "@/data/company-data";
+import Image from "next/image";
 
 export default function AboutUsPage() {
     return (
-        // create a simple page
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 bg-white text-gray-900 p-10">
+            <h1 className="text-4xl font-bold text-red-600 mb-8 text-center">About Us</h1>
 
-        <motion.div
-            className="mx-auto max-w-6xl px-4 sm:px-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            {/* Safety Section */}
+            <Section
+                title={companyData.safety_title}
+                description={companyData.safety_description}
+                imageUrl="/images/project/op1.jpg"
+            />
 
-        >
+            {/* Quality Section */}
+            <Section
+                title={companyData.quality_title}
+                description={companyData.quality_description}
+                imageUrl="/images/project/op2.jpg"
+            />
 
-            </motion.div>
+            {/* Placeholder for Third Section */}
+            <Section
+                title="Our Mission"
+                description="Our mission is to deliver exceptional civil construction and engineering solutions that exceed our clients' expectations. We are committed to innovation, quality, and safety in all our projects."
+                imageUrl="/images/project/op3.jpg"
+            />
+
+            {/* Placeholder for Fourth Section */}
+            {/* Key Personnel Section */}
+            <KeyPersonnelSection keyPersonnel={companyData.keyPersonnel} />
+        </div>
     );
 }
 
-function Section({ title, description }: { title: string; description: string }) {
+function Section({ title, description, imageUrl }: { title: string; description: string; imageUrl: string }) {
     return (
-        <motion.div
-            className="my-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-        >
-            <h2 className="text-4xl font-bold text-red-600 mb-4">{title}</h2>
-            <p className="text-lg text-gray-700 max-w-3xl">{description}</p>
-        </motion.div>
+        <div className="my-16 ">
+            <h2 className="text-3xl font-bold text-red-600 mb-4">{title}</h2>
+            <div className="flex flex-col md:flex-row items-center mb-6">
+           
+                <div className="md:w-1/2 md:pr-4 mb-4 md:mb-0">
+                    <p className="text-md    text-gray-700">{description}</p>
+                </div>
+                
+                <div className="md:w-1/2 mt-4 md:mt-0">
+                    <div className="w-full h-[300px] overflow-hidden rounded-lg shadow-lg">
+                        <Image src={imageUrl} alt={title} width={1200} height={500} className="w-full object-cover" />
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 
-function ImageSection({ imageUrl }: { imageUrl: string }) {
-    return (
-        <motion.div
-            className="my-10 w-full overflow-hidden rounded-lg shadow-lg"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-        >
-            <Image src={imageUrl} alt="Section Image" width={1200} height={500} className="w-full object-cover" />
-        </motion.div>
-    );
-}
 
-interface Person {
-    name: string;
-    title: string;
-    phone: string;
-}
 
-function TeamSection({ keyPersonnel }: { keyPersonnel: Person[] }) {
+function KeyPersonnelSection({ keyPersonnel }: { keyPersonnel: { name: string; title: string; phone: string }[] }) {
     return (
-        <motion.div className="mt-16" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}>
-            <h2 className="text-4xl font-bold text-red-600 mb-6">Our Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="my-16">
+            <h2 className="text-3xl font-bold text-red-600 mb-8 text-center">Key Personnel</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {keyPersonnel.map((person, index) => (
-                    <motion.div
-                        key={index}
-                        className="p-6 border-l-4 border-red-600 shadow-md rounded-lg bg-gray-50"
-                        whileHover={{ scale: 1.05 }}
-                    >
+                    <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
                         <Image
-                            src="https://via.placeholder.com/200"
+                            src="/images/team/person.jpg"
                             alt={person.name}
-                            width={200}
-                            height={200}
-                            className="rounded-full mx-auto mb-4"
+                            width={150}
+                            height={150}
+                            className="mx-auto rounded-full mb-4"
                         />
                         <h3 className="text-xl font-semibold text-gray-800">{person.name}</h3>
                         <p className="text-gray-600">{person.title}</p>
                         <p className="text-gray-500">{person.phone}</p>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
-        </motion.div>
+        </div>
     );
 }

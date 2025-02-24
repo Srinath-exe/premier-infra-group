@@ -141,7 +141,7 @@ const companyData = {
   equipmentList: {
     "hydraulic_cranes": [
       { "name": "NAME", "capacity_mt": "Capacity (mt)", "boom_length_m": "BOOM LENGTH", "quantity": "No." },
-      { "name": "TEREX AC 500", "capacity_mt": 500, "boom_length_m": null, "quantity": 2 },
+      { "name": "TEREX AC 500", "capacity_mt": 500, "boom_length_m": null, "quantity": 2 ,"image" : "images/project/op1.jpg" },
       { "name": "LIEBHERR LTM 1400/1", "capacity_mt": 400, "boom_length_m": 58, "quantity": 4 },
       { "name": "DEMAG AC 400", "capacity_mt": 400, "boom_length_m": 58, "quantity": 4 },
       { "name": "DEMAG HC 1010", "capacity_mt": 400, "boom_length_m": 52, "quantity": 4 },

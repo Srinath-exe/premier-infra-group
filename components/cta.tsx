@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 
-import dottedImage from "@/public/images/shape-dotted-dark.svg";
+import dottedImage from "@/public/images/shape-dotted-light.svg";
 import companyData  from "@/data/company-data";
 
 
@@ -25,7 +25,7 @@ const Contact = () => {
       {/* <!-- ===== Contact Start ===== --> */}
       <section id="support" className="px-4 md:px-8 2xl:px-0">
         <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
-          <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-[#dee7ff47] dark:bg-gradient-to-t dark:to-[#252A42]"></div>
+          <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-grey-500 dark:bg-gradient-to-t dark:to-grey-500"></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
             <Image
               src={dottedImage}
@@ -60,7 +60,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8  dark:bg-transparent md:w-3/5 lg:w-3/4 xl:p-15"
             >
-              <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+              <h2 className="mb-15 text-3xl font-semibold text-black dark:text-red-500 xl:text-sectiontitle2">
                 Contact Us
               </h2>
 
@@ -72,13 +72,13 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Full name"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 text-black focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
                   />
 
                   <input
                     type="email"
                     placeholder="Email address"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 text-black focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
                   />
                 </div>
 
@@ -86,13 +86,13 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Subject"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 text-black focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
                   />
 
                   <input
                     type="text"
                     placeholder="Phone number"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 text-black focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2 rounded-lg"
                   />
                 </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                   <textarea
                     placeholder="Message"
                     rows={4}
-                    className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white rounded-lg"
+                    className="w-full border-b border-stroke bg-transparent text-black focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white rounded-lg"
                   ></textarea>
                 </div>
 
@@ -130,17 +130,16 @@ const Contact = () => {
                     </span>
                     <label
                       htmlFor="default-checkbox"
-                      className="flex max-w-[425px] cursor-pointer select-none pl-5"
+                      className="flex max-w-[425px] cursor-pointer select-none pl-5 text-black"
                     >
                       By clicking Checkbox, you agree to use our “Form” terms
                       And consent cookie usage in browser.
                     </label>
                   </div>
 
-             
                   <div data-aos="fade-up" data-aos-delay={400}>
                     <a
-                      className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                      className="btn group mb-4 w-full bg-linear-to-t from-red-600 to-red-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                       href="#0"
                     >
                       <span className="relative inline-flex items-center">
@@ -173,29 +172,29 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
             >
-              <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+              <h2 className="mb-12.5 text-3xl font-semibold text-black  xl:text-sectiontitle2">
                 Find us
               </h2>
 
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                <h3 className="mb-4 text-metatitle3 font-medium text-black">
                   Our Location
                 </h3>
-                <p>{companyData.regdAddress}</p>
+                <p className="text-black">{companyData.regdAddress}</p>
               </div>
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                <h3 className="mb-4 text-metatitle3 font-medium text-black">
                   Email Address
                 </h3>
-                <p>
+                <p className="text-black">
                   <a href="#">{companyData.email}</a>
                 </p>
               </div>
               <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                <h4 className="mb-4 text-metatitle3 font-medium text-black">
                   Phone Number
                 </h4>
-                <p>
+                <p  className="text-black">
                   <a href="#">{companyData.phone}</a>
                 </p>
               </div>

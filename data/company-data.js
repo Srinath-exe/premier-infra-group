@@ -1,4 +1,3 @@
-import { title } from "process";
 
 const companyData = {
   name: "Premier Infra Group Pvt. Ltd.",
@@ -42,49 +41,49 @@ const companyData = {
   services_mini_title: "Our comprehensive service portfolio",
 
   services: [
+    "CONSTRUCTION OF BRIDGES (EPC & BOQ CONTRACTS)",
+    "CONSTRUCTION OF ROADS (EPC & BOQ CONTRACTS)",
     "ERECTION",
     "FABRICATION",
     "DESIGNING",
     "TRADING",
     "HIRING/RENTING",
     "TRANSPORTATION",
-    "CONSTRUCTION OF BRIDGES (EPC & BOQ CONTRACTS)",
-    "CONSTRUCTION OF ROADS (EPC & BOQ CONTRACTS)"
   ],
 
-  services_section: [
-    {
-      "title": "Erection",
-      "description": "We provide erection services for steel structures, heavy machinery, and bridge components with precision and safety."
-    },
-    {
-      "title": "Fabrication",
-      "description": "Custom fabrication of steel and concrete structures, ensuring high-quality and durable construction solutions."
-    },
-    {
-      "title": "Designing",
-      "description": "Our in-house design team develops tailored solutions for structural engineering, site planning, and assembly."
-    },
-    {
-      "title": "Trading",
-      "description": "We supply high-quality construction materials, specialized components, and equipment for various projects."
-    },
-    {
-      "title": "Hiring/Renting",
-      "description": "Rental services for construction equipment, including tower cranes, boom lifts, and heavy hydraulic cranes."
-    },
-    {
-      "title": "Transportation",
-      "description": "Fleet of horses and axel trailers in different configurations to ensure smooth and timely transportation of materials and equipment."
-    },
-    {
-      "title": "Bridge Construction (EPC & BOQ Contracts)",
-      "description": "Comprehensive bridge construction services, including steel and PSC bridges, with end-to-end project management."
-    },
-    {
-      "title": "Road Construction (EPC & BOQ Contracts)",
-      "description": "Expertise in road construction projects, delivering high-quality infrastructure with operational efficiency."
-    }
+  services_section: [{
+    "title": "Bridge Construction (EPC & BOQ Contracts)",
+    "description": "Comprehensive bridge construction services, including steel and PSC bridges, with end-to-end project management."
+  },
+  {
+    "title": "Road Construction (EPC & BOQ Contracts)",
+    "description": "Expertise in road construction projects, delivering high-quality infrastructure with operational efficiency."
+  },
+  {
+    "title": "Erection",
+    "description": "We provide erection services for steel structures, heavy machinery, and bridge components with precision and safety."
+  },
+  {
+    "title": "Fabrication",
+    "description": "Custom fabrication of steel and concrete structures, ensuring high-quality and durable construction solutions."
+  },
+  {
+    "title": "Designing",
+    "description": "Our in-house design team develops tailored solutions for structural engineering, site planning, and assembly."
+  },
+  {
+    "title": "Trading",
+    "description": "We supply high-quality construction materials, specialized components, and equipment for various projects."
+  },
+  {
+    "title": "Hiring/Renting",
+    "description": "Rental services for construction equipment, including tower cranes, boom lifts, and heavy hydraulic cranes."
+  },
+  {
+    "title": "Transportation",
+    "description": "Fleet of horses and axel trailers in different configurations to ensure smooth and timely transportation of materials and equipment."
+  },
+
   ],
 
   strengths_title: "Our Strengths",
@@ -103,16 +102,26 @@ const companyData = {
   },
   {
     title: "Project Excellence",
-    description : "Executed some of the most challenging projects"
-  },{
+    description: "Executed some of the most challenging projects"
+  }, {
     title: "Safety Compliance",
     description: "Thorugh understanding of safety regulations"
   }
-],
+  ],
 
-client_title: "Our Clients",
-client_description: "We have a diverse client base that includes some of the most reputed names in the industry. Our commitment to quality and customer satisfaction has helped us build long-lasting relationships with our clients.",
+  client_title: "Our Clients",
+  client_description: "We have a diverse client base that includes some of the most reputed names in the industry. Our commitment to quality and customer satisfaction has helped us build long-lasting relationships with our clients.",
 
+
+  aboutUs_title: "About Us",
+  aboutUs_description: "We at Premier Infra Services Pvt. Ltd. share a common vision and commitment to delivering exceptional Civil Construction & Engineering solutions at competitive prices.Our customercentric approach ensures that we cater to both stated and implied needs, driven by our core values.As a leading professional and multifaceted Turnkey Engineering Organization in India, the Premier Group offers a distinctive array of services that prioritize Customer Focus, Quality, Safety, Technology, Innovation, Motivation, and Professional Competence.Our ultimate goal is to surpass customer expectations through continuous improvement, achieved by effectively implementing our Quality Management System and maintaining rigorous control over all internal processes.",
+
+  safety_title: "Safety",
+  safety_description: "At our organization, we prioritize the well-being and safety of our employees and stakeholders by adhering to the ISO 18001: 2007 Occupational Health and Safety Management System(OH&S) procedures.By embracing these internationally recognized standards, we integrate robust safety measures into our operations, ensuring the protection of our workforce and the successful execution of our projects. Our commitment to safety is ongoing, with regular reviews and assessments of our working systems to identify and mitigate potential health and safety risks.This proactive approach enables us to maintain a safe and reliable work environment, making us a trusted partner for our clients and stakeholders. By prioritizing occupational health and safety, we demonstrate our dedication to responsible business practices, employee welfare, and operational excellence.",
+  
+  quality_title: "Quality",
+  quality_description: "Our company takes pride in being an ISO 9001:2008 certified organization, adhering to the internationally recognized Quality Management System Standard. This certification enables us to maintain a robust quality framework, ensuring that our operations and applications consistently meet the highest standards. To achieve this, we have established and documented clear quality policy objectives, which serve as a guiding framework for our organization. These objectives are communicated to and thoroughly understood by our employees, empowering them to contribute to the effective implementation of our quality management system. By instilling a culture of quality excellence throughout our organization, we ensure that our systems and processes operate at optimal levels, driving continuous improvement and customer satisfaction.",
+  
   keyPersonnel: [
     { name: "Mr. S.D. Sharma", title: "Managing Partner", phone: "+91-9811346119" },
     { name: "Mr. Anil Kumar Chaudhary", title: "Director", phone: "+91-9999986641" },

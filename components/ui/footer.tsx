@@ -24,11 +24,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Our Services</h3>
+            <h3 className="text-sm font-semibold text-red-600">Our Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   {companyData.services_section[0].title}
@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   {companyData.services_section[1].title}
@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   {companyData.services_section[2].title}
@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   {companyData.services_section[3].title}
@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   {companyData.services_section[4].title}
@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   {companyData.services_section[5].title}
@@ -78,11 +78,11 @@ export default function Footer() {
           </div>
           {/* 2nd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Company</h3>
+            <h3 className="text-sm font-semibold text-red-600">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   About us
@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Quality
@@ -98,7 +98,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Saftey
@@ -106,7 +106,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Leadership
@@ -114,7 +114,7 @@ export default function Footer() {
               </li>
               {/* <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Financial statements
@@ -124,11 +124,11 @@ export default function Footer() {
           </div>
           {/* 3rd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Our Equipments</h3>
+            <h3 className="text-sm font-semibold text-red-600">Our Equipments</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Hydraulic Cranes
@@ -136,7 +136,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Crawker Cranes
@@ -144,7 +144,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Trucks & Trailers
@@ -154,13 +154,13 @@ export default function Footer() {
           </div>
           {/* 4th block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">
+            <h3 className="text-sm font-semibold text-red-600">
               Operations
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Infrastructure and EPC
@@ -168,7 +168,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Refinery
@@ -176,7 +176,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Oil and Gas
@@ -184,7 +184,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Steel & Cement
@@ -192,7 +192,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   Green Energy
@@ -206,11 +206,11 @@ export default function Footer() {
               <Logo />
             </div>
             <div className="text-sm">
-              <p className="mb-3 text-indigo-200/65">
+              <p className="mb-3 text-black">
                 © {new Date().getFullYear()} {companyData.name}
                 <span className="text-gray-700"> · </span>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-black transition hover:text-indigo-500"
                   href="#0"
                 >
                   All rights reserved.
@@ -225,7 +225,7 @@ export default function Footer() {
                     aria-label="LinkedIn"
                   >
                     <svg
-                      className="h-8 w-8 fill-current"
+                      className="h-8 w-8 fill-current text-red-600"
                       viewBox="0 0 32 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -234,9 +234,6 @@ export default function Footer() {
                   </a>
                 </li>
                 
-
-
-             
               </ul>
             </div>
           </div>

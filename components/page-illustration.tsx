@@ -33,7 +33,8 @@ export default function PageIllustration({
               src={BlurredShapeGray}
               width={760}
               height={668}
-              alt="Blurred shape"
+              alt="Blurred shape" style={{ filter: "invert(27%) sepia(100%) saturate(7471%) hue-rotate(0deg) brightness(104%) contrast(104%)" }}
+
             />
           </div>
           <div
@@ -45,7 +46,8 @@ export default function PageIllustration({
               src={BlurredShape}
               width={760}
               height={668}
-              alt="Blurred shape"
+              alt="Blurred shape" style={{ filter: "invert(27%) sepia(100%) saturate(7471%) hue-rotate(0deg) brightness(104%) contrast(104%)" }}
+
             />
           </div>
         </>

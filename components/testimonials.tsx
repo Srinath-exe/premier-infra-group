@@ -99,10 +99,10 @@ export default function Testimonials() {
       <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
         {/* Section header */}
         <div className="mx-auto max-w-3xl pb-12 text-center">
-          <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+          <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,#FF0000,#FF4D4D,#FF9999,#FF4D4D,#FF0000)] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
             {companyData.client_title}
           </h2>
-          <p className="text-lg text-indigo-200/65">
+          <p className="text-lg text-black">
             {companyData.client_description}
            </p>
         </div>
@@ -241,25 +241,7 @@ export function Testimonial({
         <p className="text-black text-sm font-medium text-center">
           {testimonial.company}
         </p>
-        {/* <div className="flex items-center gap-3">
-          <Image
-            className="inline-flex shrink-0 rounded-full"
-            src={testimonial.img}
-            width={50}
-            height={50}
-            alt={testimonial.name}
-          />
-          <div className="text-sm font-medium text-gray-200">
-            <span>{testimonial.name}</span>
-            <span className="text-gray-700"> - </span>
-            <a
-              className="text-indigo-200/65 transition-colors hover:text-indigo-500"
-              href="#0"
-            >
-              {testimonial.company}
-            </a>
-          </div>
-        </div> */}
+       
       </div>
       </article></div>
   );

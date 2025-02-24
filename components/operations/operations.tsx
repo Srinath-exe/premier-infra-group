@@ -7,10 +7,10 @@ import img5 from "@/public/images/project/op5.jpg";
 
 export default function Operations() {
     return (
-        <section className="py-12">
+        <section className="py-12 bg-secondary">
             <div className="mx-auto w-full px-4 sm:px-6">
-                <h2 className="text-3xl font-semibold text-center mb-8">Our Operations</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0">
+                <h2 className="text-3xl font-semibold text-center mb-8 text-primary">Our Projects</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                     <Card
                         imgSrc={img1}
                         title="Operation 1"

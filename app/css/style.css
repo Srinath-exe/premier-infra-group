@@ -128,3 +128,10 @@
 * {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+
+
+
+
+.cursor-image1 {
+    cursor: url('/images/project/op1.jpg'), auto;
+}

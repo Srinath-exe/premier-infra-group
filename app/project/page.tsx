@@ -1,4 +1,5 @@
 import companyData from "@/data/company-data";
+import image1 from "@/public/images/project/op1.jpg";
 
 export default function ProjectsPage() {
     return (

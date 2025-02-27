@@ -20,6 +20,7 @@ export default function PageIllustration({
           width={846}
           height={594}
           alt="Page illustration"
+          style={{ filter: "invert(27%) sepia(100%) saturate(7471%) hue-rotate(0deg) brightness(104%) contrast(104%)" }}
         />
       </div>
       {multiple && (

@@ -19,6 +19,7 @@ export default function Footer() {
             width={1076}
             height={378}
             alt="Footer illustration"
+            style={{ filter: "invert(27%) sepia(100%) saturate(7471%) hue-rotate(0deg) brightness(104%) contrast(104%)" }}
           />
         </div>
         <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">

@@ -174,6 +174,8 @@ const companyData = {
       { "name": "Zoom line Tower Crane", "jib_length_m": "50 m", "free_standing_height_m": "46 m", "extendable_height_m": "150 m", "max_capacity_ton": 8, "tip_load_ton": 1.8, "quantity": 2 }
     ]
   },
+
+  projects_title: "Our Projects",
   projects: [
     {
       "client": "Client",

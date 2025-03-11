@@ -1,6 +1,7 @@
 
 const companyData = {
-  name: "Premier Infra Group Pvt. Ltd.",
+  full_name: "Premier Infra Group Pvt. Ltd.",
+  name: "Premier Infra Group",
   regdAddress: "B-II/38, 2nd Floor, Safdarjung Enclave, New Delhi – 110029",
   branchAddress: "D-4, Ground Floor, Westend Marg, Saidulajab Extension, Near Garden of Five Senses, Saket - 110029",
   aboutUs: [

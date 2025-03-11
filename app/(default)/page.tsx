@@ -11,11 +11,13 @@ import Testimonials from "@/components/testimonials";
 import Contact from "@/components/cta";
 import Operations from "@/components/operations/operations";
 import StatsSection from "@/components/StatsSection";
+import TitleVideo from "@/components/title-video";
 
 
 export default function Home() {
   return (
     <>
+      <TitleVideo />
       <PageIllustration />
       <Hero />
       <StatsSection />

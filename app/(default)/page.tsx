@@ -12,6 +12,7 @@ import Contact from "@/components/cta";
 import Operations from "@/components/operations/operations";
 import StatsSection from "@/components/StatsSection";
 import TitleVideo from "@/components/title-video";
+import Operations1 from "@/components/operations/operations_1";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Features />
       <Testimonials />
       <Operations />
+      <Operations1 /> 
       <Contact />
     </>
   );

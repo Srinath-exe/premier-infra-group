@@ -1,6 +1,12 @@
 import React from "react";
 import companyData from "@/data/company-data";
 
+
+export const metadata = {
+    title: "Equipments | Premier Infra Group",
+    description: "Explore the extensive range of equipment available at Premier Infra Group, including hydraulic cranes, crawler cranes, trucks, trailers, and tower cranes.",
+};              
+
 export default function EquipmentsPage() {
     return (
         <div className="mx-auto max-w-6xl px-4 sm:px-6 bg-white text-gray-900 p-10">

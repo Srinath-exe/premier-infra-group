@@ -3,7 +3,7 @@ import companyData from "@/data/company-data";
 import Image from "next/image";
 
 export const metadata = {
-    title: "About Us | Premier Infra Group",
+    title: "About Us",
     description: "Learn more about Premier Infra Group, our team, and our values.",
 };
 
@@ -26,7 +26,7 @@ export default function AboutUsPage() {
                     </p>
                 </div>
                 <div className="md:w-1/3 flex justify-center z-10">
-                    <div className="w-48 h-48 sm:w-56 sm:h-56 bg-gradient-to-br from-red-200 to-red-400 rounded-full flex items-center justify-center shadow-xl border-8 border-white hover:scale-105 transition-transform">
+                    <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full flex items-center justify-center shadow-xl border-8 border-white hover:scale-105 transition-transform">
                         <Image
                             src="/images/logo.png"
                             alt={companyData.name}

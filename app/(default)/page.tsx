@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Premier Infra Group",
-  description: "Page description",
+  description: "Leading provider of infrastructure solutions.",
 };
 
 import PageIllustration from "@/components/page-illustration";

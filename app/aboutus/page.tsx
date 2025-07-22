@@ -11,34 +11,33 @@ export default function AboutUsPage() {
     return (
         <div className="mx-auto max-w-7xl px-4 sm:px-8 bg-gradient-to-br from-white via-gray-50 to-gray-100 text-gray-900 py-20 min-h-screen">
             <h1 className="text-5xl sm:text-6xl font-black text-center mb-20 tracking-tight bg-gradient-to-r from-red-600 via-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-md">
-                About Us
+            About Us
             </h1>
 
             {/* Introduction Section */}
             <section className="relative flex flex-col md:flex-row items-center gap-12 bg-white rounded-3xl shadow-lg p-10 mb-24 overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <GradientBlobs />
-                <div className="md:w-2/3 z-10">
-                    <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
-                        {companyData.name}
-                    </h2>
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                        {companyData.aboutUs_description}
-                    </p>
+            <GradientBlobs />
+            <div className="md:w-2/3 z-10">
+                <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
+                {companyData.name}
+                </h2>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                {companyData.aboutUs_description}
+                </p>
+            </div>
+            <div className="md:w-1/3 flex justify-center z-10">
+                <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full flex items-center justify-center shadow-xl border-8 border-white hover:scale-105 transition-transform">
+                <Image
+                    src="/images/logo.png"
+                    alt={companyData.name}
+                    width={180}
+                    height={180}
+                    className="object-contain rounded-full"
+                />
                 </div>
-                <div className="md:w-1/3 flex justify-center z-10">
-                    <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full flex items-center justify-center shadow-xl border-8 border-white hover:scale-105 transition-transform">
-                        <Image
-                            src="/images/logo.png"
-                            alt={companyData.name}
-                            width={180}
-                            height={180}
-                            className="object-contain rounded-full"
-                        />
-                    </div>
-                </div>
+            </div>
             </section>
-
-            {/* Sections */}
+             {/* Sections */}
             <Section
                 title={companyData.safety_title}
                 description={companyData.safety_description}
@@ -51,8 +50,76 @@ export default function AboutUsPage() {
                 imageUrl="/images/project/op2.jpg"
             />
 
-            {/* Team */}
-            <KeyPersonnelSection keyPersonnel={companyData.keyPersonnel} />
+            {/* First 2 Key Personnel in a row */}
+            <section className="my-24">
+            <h2 className="text-4xl font-extrabold text-center text-red-600 mb-14 tracking-tight">
+                Key Personnel
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-center max-w-2xl mx-auto">
+                {companyData.keyPersonnel.slice(0, 2).map((person, index) => (
+                <div
+                    key={index}
+                    className="bg-white p-8 rounded-3xl shadow-md flex flex-col items-center border border-gray-100 hover:shadow-2xl transition-shadow duration-300 group"
+                >
+                    <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-red-200 mb-4 shadow-sm group-hover:scale-105 transition-transform duration-300 bg-gradient-to-br from-red-100 to-red-300">
+                    <Image
+                        src="/images/team/person.jpg"
+                        alt={person.name}
+                        width={112}
+                        height={112}
+                        className="object-cover w-full h-full"
+                    />
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-1 text-center">
+                    {person.name}
+                    </h3>
+                    <p className="text-red-600 font-medium mb-1 text-center">
+                    {person.title}
+                    </p>
+                    {person.phone && (
+                    <p className="text-gray-500 text-center">{person.phone}</p>
+                    )}
+                </div>
+                ))}
+            </div>
+            </section>
+
+           
+
+            {/* Our Team Title */}
+            <h2 className="text-2xl font-extrabold text-center text-red-600 mb-14 tracking-tight">
+            Our Team
+            </h2>
+            {/* Rest of the Key Personnel */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-24">
+            {companyData.keyPersonnel.slice(2).map((person, index) => (
+                <div
+                key={index + 2}
+                className="bg-white p-8 rounded-3xl shadow-md flex flex-col items-center border border-gray-100 hover:shadow-2xl transition-shadow duration-300 group"
+                >
+                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-red-200 mb-4 shadow-sm group-hover:scale-105 transition-transform duration-300 bg-gradient-to-br from-red-100 to-red-300">
+                    <Image
+                    src="/images/team/person.jpg"
+                    alt={person.name}
+                    width={112}
+                    height={112}
+                    className="object-cover w-full h-full"
+                    />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-1 text-center">
+                    {person.name}
+                </h3>
+                <p className="text-red-600 font-medium mb-1 text-center">
+                    {person.title}
+                </p>
+                {person.phone && (
+                    <p className="text-gray-500 text-center">{person.phone}</p>
+                )}
+                </div>
+            ))}
+            </div>
+
+          
         </div>
     );
 }
@@ -92,11 +159,10 @@ function Section({
         </section>
     );
 }
-
 function KeyPersonnelSection({
     keyPersonnel,
 }: {
-    keyPersonnel: { name: string; title: string; phone: string }[];
+    keyPersonnel: { name: string; title: string; phone?: string }[];
 }) {
     return (
         <section className="my-24">
@@ -124,7 +190,9 @@ function KeyPersonnelSection({
                         <p className="text-red-600 font-medium mb-1 text-center">
                             {person.title}
                         </p>
-                        <p className="text-gray-500 text-center">{person.phone}</p>
+                        {person.phone && (
+                            <p className="text-gray-500 text-center">{person.phone}</p>
+                        )}
                     </div>
                 ))}
             </div>

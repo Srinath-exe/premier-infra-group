@@ -21,30 +21,51 @@ export default function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+            <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+              className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+              style={{ fontSize: "2rem", fontWeight: "bold", padding: "0.75rem" }}
             >
               <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-                ></path>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+              ></path>
               </svg>
             </button>
+            </div>
+
+            {/* Desktop sign in links */}
+            <ul className="hidden md:flex flex-1 items-center justify-end gap-3">
+            <li>
+              <Button href="/project">Projects</Button>
+            </li>
+            <li>
+              <Button href="/equipments">Equipments</Button>
+            </li>
+            <li>
+              <Button href="/aboutus">About Us</Button>
+            </li>
+            <li>
+              <Button href="/contact">Contact Us</Button>
+            </li>
+            </ul>
+          </div>
           </div>
 
-          {/* Desktop sign in links */}
-          <ul className="hidden md:flex flex-1 items-center justify-end gap-3">
+          {/* Mobile menu */}
+          {isMobileMenuOpen && (
+          <div className="md:hidden">
+            <ul className="flex flex-col items-center gap-3 mt-4">
             <li>
               <Button href="/project">Projects</Button>
             </li>
@@ -57,28 +78,8 @@ export default function Header() {
             <li>
               <Button href="/contact">Contact Us</Button>
             </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden">
-          <ul className="flex flex-col items-center gap-3 mt-4">
-            <li>
-              <Button href="/project">Projects</Button>
-            </li>
-            <li>
-              <Button href="/equipments">Equipments</Button>
-            </li>
-            <li>
-              <Button href="/aboutus">About Us</Button>
-            </li>
-            <li>
-              <Button href="/contact">Contact Us</Button>
-            </li>
-          </ul>
-        </div>
+            </ul>
+          </div>
       )}
     </header>
   );

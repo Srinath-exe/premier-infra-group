@@ -124,17 +124,20 @@ const companyData = {
   quality_description: "Our company takes pride in being an ISO 9001:2008 certified organization, adhering to the internationally recognized Quality Management System Standard. This certification enables us to maintain a robust quality framework, ensuring that our operations and applications consistently meet the highest standards. To achieve this, we have established and documented clear quality policy objectives, which serve as a guiding framework for our organization. These objectives are communicated to and thoroughly understood by our employees, empowering them to contribute to the effective implementation of our quality management system. By instilling a culture of quality excellence throughout our organization, we ensure that our systems and processes operate at optimal levels, driving continuous improvement and customer satisfaction.",
 
   keyPersonnel: [
-    { name: "Mr. S.D. Sharma", title: "Managing Partner", phone: "+91-9811346119" },
-    { name: "Mr. Anil Kumar Chaudhary", title: "Director", phone: "+91-9999986641" },
-    { name: "Mr. Babu Menoki", title: "CEO", phone: "+91-9999800432" },
-    { name: "Mr. Siddharth Sharma", title: "Assistant Director", phone: "+91-9999986637" },
-    { name: "Karan Soni", title: "Director", phone: "+91-97178 69198" },
-    { name: "Sachin Sharma", title: "Director", phone: "+91-9999986640" },
-    { name: "Mr. S.K. Soni", title: "Executive Director", phone: "+91-98381 08055" },
+    { name: "Mr. S.D. Sharma", title: "Managing Partner" },
+    { name: "Mr. Anil Kumar Chaudhary", title: "Director" },
+    { name: "Mr. Babu Menoki", title: "CEO" }, 
+    { name: "Mr. S.K. Soni", title: "Executive Director" }, 
+    { name: "Mr. Anand Chaudhary", title: "Director" },
+    { name: "Mr. Siddharth Sharma", title: "Director" },
+    { name: "Mr. Karan Soni", title: "Director" },
+    { name: "Mr. Sachin Sharma", title: "Director" },
+
+
     { name: "Mr. Chetan Bhatia", title: "Head – Operations & Maintenance", phone: "+91-9999986644" },
     { name: "Mr. Sanjiv Kumar Singh", title: "Head- Accounts & Finance", phone: "+91-9999986633" },
-    { name: "Mr. Anand Chaudhary", title: "Assistant Director", phone: "+91-9999986630" },
-    { name: "Mr. Umesh Jha", title: "In charge-Tower Cranes", phone: "+91-9999986643" }
+    
+    { name: "Mr. Umesh Jha", title: "In charge-Tower Cranes" }
   ],
   contact: {
     phone: "+91-9999986633",
